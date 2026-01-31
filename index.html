@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metabnb</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <nav class="padded">
+        <img src="assets/logo1.png" alt="" />
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="places.html">Place to stay</a></li>
+          <li><a href="">NFTs</a></li>
+          <li><a href="">Community</a></li>
+        </ul>
+        <button class="nav-button" id="connect-btn">Connect wallet</button>
+        <dialog id="modal-dialog">
+            <form method="dialog" class="modal-container">
+                <label for="wallet"></label>
+                <input type="text" name="wallet" id="wallet" class="modal-input" placeholder="Input your wallet address" required>
+            </form>
+            <button type="submit" class="submit-btn">Send!</button>
+            <button class="close-modal">X</button>
+        </dialog>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+      </nav>
+      <section class="hero-container padded">
+        <div class="sec-1">
+          <h2>Rent a <span class="span-text">Place</span> away from <br> <span class="span-text">Home</span> in the <span class="span-text">Metaverse</span></h2>
+          <p>
+            we provide you access to luxury and affordable houses <br> in the
+            metaverse, get a chance to turn your <br> imagination to reality at your
+            comfort zone
+          </p>
+          <form action="" class="form-container">
+            <div class="input-container">
+              <input
+                type="text"
+                placeholder="Search for location"
+                id="location"
+                name="location"
+                class="search-input"
+              />
+            </div>
+            <button class="search-btn">Search</button>
+          </form>
+        </div>
+        <div class="sec-2">
+          <img src="assets/image 1.png" alt="" class="item-1"/>
+          <img src="assets/image 2.png" alt="" class="item-2"/>
+          <img src="assets/image 3.png" alt="" class="item-3"/>
+          <img src="assets/image 4.png" alt="" class="item-4"/>
+        </div>
+      </section>
+      <section class="wallet-container">
+        <img src="assets/wallet-1.png" alt="" />
+        <img src="assets/wallet-2.png" alt="" />
+        <img src="assets/wallet-3.png" alt="" />
+      </section>
+      <section class="card-container padded">
+        <h2>Inspiration for your next adventure</h2>
+        <div class="image-container">
+          <!-- API to render images or manually input images -->
+           <div class="image" data-location="restaurant">
+                <img src="assets/Frame 151.png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="image" data-location="cottage">
+                <img src="assets/Frame 151 (1).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="image" data-location="castle">
+                <img src="assets/Frame 151 (2).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="image" data-location="fantasy city">
+                <img src="assets/Frame 151 (3).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="image" data-location="beach">
+                <img src="assets/Frame 151 (4).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="image" data-location="cabins">
+                <img src="assets/Frame 151 (5).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="image" data-location="off-grid">
+                <img src="assets/Frame 151 (6).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="image" data-location="farm">
+                <img src="assets/Frame 151 (7).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+        </div>
+      </section>
+      <section class="learn-more">
+        <div class="sec-3">
+          <h2>Metabnb NFTs</h2>
+          <p>
+            Discover our NFT gift cards collection. Loyal customers gets amazing
+            gift cards which are traded as NFTs. These NFTs gives our cutomer
+            access to loads of our exclusive services.
+          </p>
+          <button class="learn-more-btn">Learn more</button>
+        </div>
+        <img src="assets/NFTs.png" alt="" />
+      </section>
+      <section class="links">
+        <div class="links-container">
+            <div class="social-links">
+              <img src="assets/logo2.png" alt="" />
+              <div class="social-media">
+                <a href=""><img src="assets/facebook.png" alt="" /></a>
+                <a href=""><img src="assets/instagram.png" alt="" /></a>
+                <a href=""><img src="assets/twitter.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="link">
+              <h4>Community</h4>
+              <ul>
+                <li>
+                  <a href="">NFT</a>
+                </li>
+                <li>
+                  <a href="">Tokens</a>
+                </li>
+                <li>
+                  <a href="">Landlords</a>
+                </li>
+                <li>
+                  <a href="">Discord</a>
+                </li>
+              </ul>
+            </div>
+            <div class="link">
+              <h4>Places</h4>
+              <ul>
+                <li>
+                  <a href="">Castle</a>
+                </li>
+                <li>
+                  <a href="">Farms</a>
+                </li>
+                <li>
+                  <a href="">Beach</a>
+                </li>
+                <li>
+                  <a href="">Learn more</a>
+                </li>
+              </ul>
+            </div>
+            <div class="link">
+              <h4>About us</h4>
+              <ul>
+                <li>
+                  <a href="">Road map</a>
+                </li>
+                <li>
+                  <a href="">Creators</a>
+                </li>
+                <li>
+                  <a href="">Career</a>
+                </li>
+                <li>
+                  <a href="">Contact us</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <footer>&copy; 2022 Metabnb</footer>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

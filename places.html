@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place to stay</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <main>
+        <nav class="padded">
+        <img src="assets/logo1.png" alt="" />
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Place to stay</a></li>
+          <li><a href="">NFTs</a></li>
+          <li><a href="">Community</a></li>
+        </ul>
+        <button class="nav-button" id="connect-btn">Connect wallet</button>
+        <dialog id="modal-dialog">
+            <form method="dialog" class="modal-container">
+                <label for="wallet"></label>
+                <input type="text" name="wallet" id="wallet" class="modal-input" placeholder="Input your wallet address" required>
+            </form>
+            <button type="submit" class="submit-btn">Send!</button>
+            <button class="close-modal">X</button>
+        </dialog>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+      </nav>
+      <section class="padded">
+        <div class="location-filters">
+            <p class="location-tag" data-location="restaurant">Restaurant</p>
+            <p class="location-tag" data-location="cottage">Cottage</p>
+            <p class="location-tag" data-location="castle">Castle</p>
+            <p class="location-tag" data-location="fantasy-city">Fantasy city</p>
+            <p class="location-tag" data-location="beach">Beach</p>
+            <p class="location-tag" data-location="cabins">Cabins</p>
+            <p class="location-tag" data-location="off-grid">Off-grid</p>
+            <p class="location-tag" data-location="farm">Farm</p>
+            <button class="location-btn" id="location-toggle">Location <span><img src="assets/setting-5.png" alt=""></span></button>
+        </div>
+      </section>
+      <section class="image-container padded">
+        <div class="card" data-location="beach">
+                <img src="assets/Frame 151 (4).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="card" data-location="cabins">
+                <img src="assets/Frame 151 (5).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="card" data-location="off-grid">
+                <img src="assets/Frame 151 (6).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="card" data-location="farm">
+                <img src="assets/Frame 151 (7).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="card" data-location="restaurant">
+                <img src="assets/Frame 151.png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="card" data-location="cottage">
+                <img src="assets/Frame 151 (1).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="card" data-location="castle">
+                <img src="assets/Frame 151 (2).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="card" data-location="fantasy-city">
+                <img src="assets/Frame 151 (3).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="card" data-location="beach">
+                <img src="assets/Frame 151 (15).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="card" data-location="cabins">
+                <img src="assets/Frame 151 (13).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="card" data-location="off-grid">
+                <img src="assets/Frame 151 (8).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="card" data-location="farm">
+                <img src="assets/Frame 151 (9).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="card" data-location="restaurant">
+                <img src="assets/Frame 151 (10).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="card" data-location="castle">
+                <img src="assets/Frame 151 (11).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="card" data-location="cottage">
+                <img src="assets/Frame 151 (12).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+           <div class="card" data-location="fantasy-city">
+                <img src="assets/Frame 151 (14).png" alt="">
+                <div class="image-desc">
+                    <p>Desert king</p>
+                    <p><b>1MBT per night</b></p>
+                </div>
+                <div class="image-desc">
+                    <p>2345km away</p>
+                    <p>available for 2weeks stay</p>
+                </div>
+                <div class="reviews">
+                    <img src="assets/star.png" alt="">
+                </div>
+           </div>
+      </section>
+      <section class="links">
+        <div class="links-container">
+            <div class="social-links">
+              <img src="assets/logo2.png" alt="" />
+              <div class="social-media">
+                <a href=""><img src="assets/facebook.png" alt="" /></a>
+                <a href=""><img src="assets/instagram.png" alt="" /></a>
+                <a href=""><img src="assets/twitter.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="link">
+              <h4>Community</h4>
+              <ul>
+                <li>
+                  <a href="">NFT</a>
+                </li>
+                <li>
+                  <a href="">Tokens</a>
+                </li>
+                <li>
+                  <a href="">Landlords</a>
+                </li>
+                <li>
+                  <a href="">Discord</a>
+                </li>
+              </ul>
+            </div>
+            <div class="link">
+              <h4>Places</h4>
+              <ul>
+                <li>
+                  <a href="">Castle</a>
+                </li>
+                <li>
+                  <a href="">Farms</a>
+                </li>
+                <li>
+                  <a href="">Beach</a>
+                </li>
+                <li>
+                  <a href="">Learn more</a>
+                </li>
+              </ul>
+            </div>
+            <div class="link">
+              <h4>About us</h4>
+              <ul>
+                <li>
+                  <a href="">Road map</a>
+                </li>
+                <li>
+                  <a href="">Creators</a>
+                </li>
+                <li>
+                  <a href="">Career</a>
+                </li>
+                <li>
+                  <a href="">Contact us</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <footer>&copy; 2022 Metabnb</footer>
+      </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
