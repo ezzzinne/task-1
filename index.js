@@ -26,12 +26,12 @@ document.addEventListener("click", (e) => {
 });
 
 connectBtn.addEventListener("click", () => {
-    modal.showModal();
-})
+  modal.showModal();
+});
 
 closeModal.addEventListener("click", () => {
-    modal.close();
-})
+  modal.close();
+});
 
 modal.addEventListener("click", (e) => {
   if (e.target === modal) {
@@ -40,70 +40,70 @@ modal.addEventListener("click", (e) => {
 });
 
 submitBtn.addEventListener("click", (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (walletInput.value.trim() === "") {
-        alert("Please enter your wallet address.");
-        return;
-    }
+  if (walletInput.value.trim() === "") {
+    alert("Please enter your wallet address.");
+    return;
+  }
 
-    alert("Your wallet is connected!")
-})
+  alert("Your wallet is connected!");
+});
 
 if (locationInput) {
-    locationInput.addEventListener("input", () => {
-        const searchValue = locationInput.value.toLowerCase();
-    
-        images.forEach(image => {
-            const location = image.dataset.location;
-    
-            if (location.includes(searchValue)) {
-                image.style.display = "block";
-            } else {
-                image.style.display = "none";
-            }
-        })
-    })
+  locationInput.addEventListener("input", () => {
+    const searchValue = locationInput.value.toLowerCase();
+
+    images.forEach((image) => {
+      const location = image.dataset.location;
+
+      if (location.includes(searchValue)) {
+        image.style.display = "block";
+      } else {
+        image.style.display = "none";
+      }
+    });
+  });
 }
 
 if (locationToggle) {
-    locationToggle.addEventListener("click", () => {
-        filtersOn = !filtersOn;
-    
-        if (filtersOn){
-            cards.forEach(card => {
-                card.style.display = "block";
-            }) 
-        }
+  locationToggle.addEventListener("click", () => {
+    filtersOn = !filtersOn;
 
-        if (filtersOn) {
-            locationToggle.classList.add("active")
-        } else {
-            locationToggle.classList.remove("active")
-        }
-    
-        locationTag.forEach(tag => {
-            tag.classList.remove("active")
-        })
-        selectedLocation = null;
-        cards.forEach(card => {
-            card.style.display = "block";
-        });
+    if (filtersOn) {
+      cards.forEach((card) => {
+        card.style.display = "block";
+      });
+    }
+
+    if (filtersOn) {
+      locationToggle.classList.add("active");
+    } else {
+      locationToggle.classList.remove("active");
+    }
+
+    locationTag.forEach((tag) => {
+      tag.classList.remove("active");
     });
+    selectedLocation = null;
+    cards.forEach((card) => {
+      card.style.display = "block";
+    });
+  });
 }
 
-locationTag.forEach(tag => {
-    tag.addEventListener("click", () => {
-        if(!filtersOn) return;
+locationTag.forEach((tag) => {
+  tag.addEventListener("click", () => {
+    if (!filtersOn) return;
 
-        selectedLocation = tag.dataset.location;
+    selectedLocation = tag.dataset.location;
 
-        locationTag.forEach(tag => tag.classList.remove("active"));
-        tag.classList.add("active");
+    locationTag.forEach((tag) => tag.classList.remove("active"));
+    tag.classList.add("active");
 
-        cards.forEach(card => {
-            card.style.display = card.dataset.location === selectedLocation ? "block" : "none";
-        })
-    })
-})
-
+    cards.forEach((card) => {
+      card.style.display =
+        card.dataset.location === selectedLocation ? "block" : "none";
+    });
+  });
+});
